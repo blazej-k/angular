@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+li.even{
+    color: rgb(34, 34, 34);
+}
+li.odd{
+    color: rgb(107, 102, 102);
+}
+li{
+    font-size: 140%;
+    margin: 20px auto;
+}
+.done{
+    float: right;
+    padding: auto 10px;
+}
+.todo{
+    padding: auto 10px;
+}
+body{
+    padding: 20px;
+}
+app-done{
+    float: right;
+    width: 50%;
+}
+app-done > button{
+    float: right;
+    margin-right: 80px;
+    margin-top: 5px;
+}
+app-to-do{
+    float: left;
+    width: 50%;
+}
+#log_out{
+    float: right;
+}
+.lists{
+    width: 60%;
+    margin: 30px 0;
+    overflow: auto;
+}
+span.description{
+    color: gray;
+    font-size: 60%;  
+}
+span.smaller{
+    color: gray;
+    font-size: 50%;
+}
+#blue{
+    color: #007bff;
+}
+#green{
+    color: #28a745;
+}
+.header{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.header > img{
+    width: 30%;
+}
+.header > h2{
+    color: #ff4800;
+}
+.form{
+    width: 30%;
+    margin: 30px auto;
+    text-align: center;
+    border: 0.8px solid gray;
+    border-radius: 10px;
+    overflow: auto;
+}
+.form > label{
+    font-size: 110%;
+}
+.form > input{
+    margin-left: 10px;  
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom: 0.8px solid gray;
+    color: rgba(39, 36, 36, 0.651);
+}
+.form > button{
+    margin: 30px;
+}

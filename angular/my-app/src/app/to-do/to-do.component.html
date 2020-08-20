@@ -1,0 +1,17 @@
+<h2>Tasks to do</h2>
+<div class="toDo" *ngIf="taskObj.tasks.length > 0; then list; else empty"></div>
+
+
+<ng-template #empty>
+    Empty list
+</ng-template>
+
+<ng-template #list>
+    <ul>
+        <li *ngFor="let task of taskObj.tasks let i = index; let odd = odd" [ngClass]="{'odd': odd, 'even': !odd }">
+            {{i+ 1}}. {{ task | upperCase }}<br><span class="description">{{ taskObj.created[i].slice(0, -3)}}</span><br>
+            <button type="button" class="btn btn-success" (click)="finish(task, taskObj.created[i])">Finish</button>
+            <button type="button" class="btn btn-danger" (click)="remove(task, taskObj.created[i])">Remove</button>
+        </li>
+    </ul>
+</ng-template>

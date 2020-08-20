@@ -1,0 +1,7 @@
+<button type="button" class="btn btn-info" id="log_out" (click)='logOut()'>Log Out</button>
+<h1>Add task to your list: </h1>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" id='el' placeholder="Write..." [(ngModel)]="newTask">
+    <button type="button" class="btn btn-primary" [disabled]='disabled' (click)="add()">Save</button>
+</div>
+

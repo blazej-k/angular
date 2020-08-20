@@ -1,0 +1,20 @@
+{
+    "/api/*" : {
+       "target" : "http://localhost:8000/api/",
+       "pathRewrite" : {
+           "/api" : ""
+       }
+   },
+   "/todo" : {
+        "target" : "http://localhost:8000/todo",
+        "pathRewrite" : {
+            "/todo" : ""
+        }       
+    },
+    "/register" : {
+        "target" : "http://localhost:8000/register",
+        "pathRewrite" : {
+            "/register" : ""
+        }       
+    }
+}

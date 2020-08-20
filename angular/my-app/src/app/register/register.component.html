@@ -1,0 +1,15 @@
+
+
+<div class="header">
+    <img src="../../assets/img/app.png">
+    <h2>Join us and keep your daily tasks in our app!</h2>
+</div>
+<div class="form">
+    <h1><span id="green">Sign</span><span id="blue">Up</span></h1>
+    <label>Login: </label>  
+    <input type='text' [(ngModel)]="login" maxlength="25"><br>
+    <label>Password: </label> 
+    <input type='password' [(ngModel)]="password" maxlength="25"><br>
+
+    <button type="button" class="btn btn-success" (click)='signUp()'>Sign Up!</button>
+</div>

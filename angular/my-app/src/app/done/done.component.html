@@ -1,0 +1,16 @@
+<button type="button" class="btn btn-danger" (click)="removeAll()" [disabled]='disabled'>Remove all</button>
+<h2>Done tasks</h2>
+<div class="done" *ngIf="doneObj.doneTasks.length > 0; then list else empty">
+</div>
+
+<ng-template #empty>
+    Empty list
+</ng-template>
+
+<ng-template #list>
+    <ul>
+        <li *ngFor="let task of doneObj.doneTasks; let i = index; let odd = odd" [ngClass]="{'odd': odd, 'even': !odd }">
+            {{i + 1}}. {{ task | upperCase }}<br><span class="smaller" appButton>{{ doneObj.finished[i] }}</span>
+        </li>
+    </ul>
+</ng-template>
